@@ -59,6 +59,28 @@ $(function () {
         }
     });
 
+    $('.sb--pinterest').each(function (k, e) {
+        var $e = $(e);
+        var url = $e.data('url');
+        var media = $e.data('media');
+
+        if (url) {
+            $e.click(function (e) {
+                e.preventDefault();
+
+                var shareUrl = 'https://www.pinterest.com/pin/create/link/' +
+                    '?url=' + encodeURIComponent(url) +
+                    '&media=' + encodeURIComponent(media);
+
+                window.open(
+                    shareUrl,
+                    '_blank',
+                    'width=400,height=460'
+                );
+            });
+        }
+    });
+
     $('.sb--mail').each(function (k, e) {
         var $e = $(e);
         var url = $e.data('url');

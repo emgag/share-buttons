@@ -81,4 +81,12 @@
     }
   }
 
+  .sb--pinterest {
+    background-color: #bd081c;
+
+    &:hover {
+      background-color: lighten(#bd081c, 5%);
+    }
+  }
+
 }
