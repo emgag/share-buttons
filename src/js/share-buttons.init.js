@@ -5,7 +5,7 @@ window.fbAsyncInit = function () {
         version: 'v2.8'
     });
 
-    $(function () {
+    document.addEventListener("DOMContentLoaded", function(event) {
         $('.sb--facebook:has(.sb--counter)').each(function (k, e) {
             var $e = $(e);
             var url = $e.data('url');
