@@ -9,7 +9,7 @@
     "url": "git@github.com:emgag/share-buttons.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@emgag"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
