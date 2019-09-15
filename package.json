@@ -1,10 +1,16 @@
 {
-  "name": "share-buttons",
+  "name": "@emgag/share-buttons",
   "version": "1.0.0",
   "description": "Simple share buttons",
-  "repository": "https://github.com/emgag/share-buttons.git",
   "author": "Entertainment Media Group AG",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:emgag/share-buttons.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "gulp": "^4.0.2",
