@@ -23,17 +23,6 @@
       font-size: 20px;
       padding: 4px 4px 4px 4px;
     }
-
-    .sb--counter {
-      display: inline-block;
-      position: absolute;
-      top: 1px;
-      right: 1px;
-      height: calc(100% - 2px);
-      font-size: 12px;
-      padding-left: 3px;
-      padding-right: 3px;
-    }
   }
 
   .sb--facebook {
@@ -46,14 +35,6 @@
     .sb--counter {
       color: #183a75;
       background-color: #99adcf;
-    }
-  }
-
-  .sb--google-plus {
-    background-color: #d34836;
-
-    &:hover {
-      background-color: #f75b44;
     }
   }
 

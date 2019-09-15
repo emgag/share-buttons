@@ -7,11 +7,10 @@ $(function () {
             $e.click(function (e) {
                 e.preventDefault();
 
-                FB.ui({
-                    method: 'share',
-                    href: url
-                }, function (response) {
-                });
+                var shareUrl = 'https://www.facebook.com/sharer/sharer.php' +
+                    '?u=' + encodeURIComponent(url);
+
+                window.open(shareUrl, '_blank', 'width=600,height=460');
             });
         }
     });
@@ -26,35 +25,12 @@ $(function () {
             $e.click(function (e) {
                 e.preventDefault();
 
-                var shareUrl = 'https://twitter.com/intent/tweet?' +
+                var shareUrl = 'https://twitter.com/intent/tweet' +
                     '?via=' + encodeURIComponent(via) +
                     '&url=' + encodeURIComponent(url) +
                     '&text=' + encodeURIComponent(text);
 
-                window.open(
-                    shareUrl,
-                    '_blank',
-                    'width=400,height=300'
-                );
-            });
-        }
-    });
-
-    $('.sb--google-plus').each(function (k, e) {
-        var $e = $(e);
-        var url = $e.data('url');
-
-        if (url) {
-            $e.click(function (e) {
-                e.preventDefault();
-
-                var shareUrl = 'https://plus.google.com/share?url=' + encodeURIComponent(url);
-
-                window.open(
-                    shareUrl,
-                    '_blank',
-                    'width=400,height=460'
-                );
+                window.open(shareUrl, '_blank', 'width=600,height=460');
             });
         }
     });
@@ -72,11 +48,7 @@ $(function () {
                     '?url=' + encodeURIComponent(url) +
                     '&media=' + encodeURIComponent(media);
 
-                window.open(
-                    shareUrl,
-                    '_blank',
-                    'width=400,height=460'
-                );
+                window.open(shareUrl, '_blank', 'width=400,height=460');
             });
         }
     });
@@ -94,10 +66,7 @@ $(function () {
                     '?subject=' + encodeURIComponent(subject) +
                     '&body=' + encodeURIComponent(url);
 
-                window.open(
-                    shareUrl,
-                    '_blank'
-                );
+                window.open(shareUrl, '_blank');
             });
         }
     });
@@ -114,10 +83,7 @@ $(function () {
                 var shareUrl = 'whatsapp://send' +
                     '?text=' + encodeURIComponent(url) + '%20' + encodeURIComponent(text);
 
-                window.open(
-                    shareUrl,
-                    '_blank'
-                );
+                window.open(shareUrl, '_blank');
             });
         }
     });
