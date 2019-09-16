@@ -41,3 +41,10 @@ JS files:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="dist/share-buttons.js"></script>
 ```
+
+### Reloading
+
+Fire this jQuery trigger to reload all share buttons. Can be used for dynamic content changes.
+```
+$(document).trigger("init-share-buttons");
+```
