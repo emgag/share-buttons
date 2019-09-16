@@ -28,9 +28,12 @@ $(document).on('init-share-buttons', function () {
                 e.preventDefault();
 
                 var shareUrl = 'https://twitter.com/intent/tweet' +
-                    '?via=' + encodeURIComponent(via) +
-                    '&url=' + encodeURIComponent(url) +
+                    '?url=' + encodeURIComponent(url) +
                     '&text=' + encodeURIComponent(text);
+
+                if (via) {
+                    shareUrl += '&via=' + encodeURIComponent(via);
+                }
 
                 window.open(shareUrl, '_blank', 'width=600,height=460');
             });
