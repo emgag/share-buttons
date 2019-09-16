@@ -1,4 +1,6 @@
-$(function () {
+$(document).on('init-share-buttons', function () {
+    $(this).trigger('reset-share-buttons');
+
     $('.sb--facebook').each(function (k, e) {
         var $e = $(e);
         var url = $e.data('url');
@@ -87,7 +89,8 @@ $(function () {
             });
         }
     });
-
-});
-
-
+}).on('reset-share-buttons', function () {
+    $('.sb--facebook, .sb--twitter, .sb--pinterest, .sb--mail, .sb--whatsapp').each(function (k, e) {
+        $(e).off('click');
+    });
+}).trigger('init-share-buttons');
