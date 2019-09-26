@@ -92,6 +92,36 @@ $(document).on('init-share-buttons', function () {
             });
         }
     });
+
+    $('.sb--native').each(function (k, e){
+        var $e = $(e);
+        var url = $e.data('url');
+        var text = $e.data('text') || '';
+
+        if(!navigator.share){
+            $e.hide();
+            return;
+        }
+
+        if (url) {
+            $e.click(function (e) {
+                e.preventDefault();
+
+                navigator.share({
+                    title: text,
+                    url: url
+                });
+            });
+        }
+    });
+
+    // hide share buttons marked as native fallback if native share is available
+    if(navigator.share){
+        $('.sb--native-fallback').each(function (k, e){
+            $(e).hide();
+        });
+    }
+
 }).on('reset-share-buttons', function () {
     $('.sb--facebook, .sb--twitter, .sb--pinterest, .sb--mail, .sb--whatsapp').each(function (k, e) {
         $(e).off('click');

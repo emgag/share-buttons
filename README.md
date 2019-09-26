@@ -6,6 +6,7 @@ Simple share buttons for these networks:
 - WhatsApp
 - Email
 - Pinterest
+- [Native share (Web Share API)](https://w3c.github.io/web-share/) 
 
 ## Usage
 
@@ -33,8 +34,13 @@ HTML code:
     <a href="#" class="sb--button sb--pinterest" data-url="http://www.example.com" data-media="http://www.example.com/image-123.jpg">
         <i class="fa fa-pinterest fa-fw"></i><span>Teilen</span>
     </a>
+    <a href="#" class="sb--button sb--native" data-url="http://www.example.com" data-text="TITLE...">
+        <i class="fa fa-native fa-fw"></i><span>Teilen</span>
+    </a>
 </div>
 ```
+
+Note: native-Share button will be hidden if the feature is not available. Buttons with class "sb--native-fallback" will be hidden if native share is available. 
 
 JS files:
 ```
