@@ -1,74 +1,74 @@
 .sb--container {
-  width: 100%;
-  display: flex;
-
-  .sb--button {
-    font-size: 14px;
-    display: inline-block;
-    height: 30px;
-    position: relative;
     width: 100%;
-    color: #fff;
-    line-height: 30px;
-    text-decoration: none;
-    margin: 1px;
+    display: flex;
 
-    span {
-      display: inline-block;
-      height: calc(100% - 2px);
-      position: absolute;
+    .sb--button {
+        font-size: 14px;
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        width: 100%;
+        color: #fff;
+        line-height: 30px;
+        text-decoration: none;
+        margin: 1px;
+
+        span {
+            display: inline-block;
+            height: calc(100% - 2px);
+            position: absolute;
+        }
+
+        i {
+            font-size: 20px;
+            padding: 4px 4px 4px 4px;
+        }
     }
 
-    i {
-      font-size: 20px;
-      padding: 4px 4px 4px 4px;
+    .sb--facebook {
+        background-color: #3b5998;
+
+        &:hover {
+            background-color: #4273c8;
+        }
+
+        .sb--counter {
+            color: #183a75;
+            background-color: #99adcf;
+        }
     }
-  }
 
-  .sb--facebook {
-    background-color: #3b5998;
+    .sb--twitter {
+        background-color: #55acee;
 
-    &:hover {
-      background-color: #4273c8;
+        &:hover {
+            background-color: #32bbf5;
+        }
     }
 
-    .sb--counter {
-      color: #183a75;
-      background-color: #99adcf;
+    .sb--whatsapp {
+        background-color: #5cbe4a;
+
+        &:hover {
+            background-color: #34af23;
+        }
     }
-  }
 
-  .sb--twitter {
-    background-color: #55acee;
+    .sb--mail {
+        background-color: #999;
 
-    &:hover {
-      background-color: #32bbf5;
+        &:hover {
+            background-color: #a8a8a8;
+        }
     }
-  }
 
-  .sb--whatsapp {
-    background-color: #5cbe4a;
+    .sb--pinterest {
+        background-color: #bd081c;
 
-    &:hover {
-      background-color: #34af23;
+        &:hover {
+            background-color: lighten(#bd081c, 5%);
+        }
     }
-  }
-
-  .sb--mail {
-    background-color: #999;
-
-    &:hover {
-      background-color: #a8a8a8;
-    }
-  }
-
-  .sb--pinterest {
-    background-color: #bd081c;
-
-    &:hover {
-      background-color: lighten(#bd081c, 5%);
-    }
-  }
 
     .sb--native {
         background-color: #999;

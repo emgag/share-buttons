@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Share Buttons</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,43 +17,80 @@
             width: 100%;
             max-width: 700px;
         }
+
+        .sb--button.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
 <main>
+    <h1>Share buttons</h1>
+
+
+    <h2>Horizontal</h2>
+
+    <div class="sb--container">
+        <a href="#" class="sb--button sb--facebook" data-url="http://www.gameswelt.de/">
+            <i class="fa fa-facebook-official fa-fw"></i><span>Share</span>
+        </a>
+        <a href="#" class="sb--button sb--twitter" data-url="http://www.gameswelt.de" data-via="@gameswelt" data-text="TEILEN!!!">
+            <i class="fa fa-twitter fa-fw"></i>
+            <span>Tweet</span>
+        </a>
+        <a href="#" class="sb--button sb--mail" data-subject="TITEL" data-url="http://www.gameswelt.de">
+            <i class="fa fa-envelope fa-fw"></i>
+            <span>Mail</span>
+        </a>
+        <a href="#" class="sb--button sb--whatsapp" data-url="http://www.gameswelt.de" data-text="TITEL!">
+            <i class="fa fa-whatsapp fa-fw"></i>
+            <span>Share</span>
+        </a>
+        <a href="#" class="sb--button sb--pinterest" data-url="http://www.gameswelt.de" data-media="http://mediang.gameswelt.net/public/images/201704/24e235e883ea093708f77b9c679002d2.jpg">
+            <i class="fa fa-pinterest fa-fw"></i>
+            <span>Share</span>
+        </a>
+    </div>
+
+    <h2>Native or fallback</h2>
+
     <div class="sb--container">
         <a href="#" class="sb--button sb--facebook sb--native-fallback" data-url="http://www.gameswelt.de/">
-            <i class="fa fa-facebook-official fa-fw"></i><span>Teilen</span>
+            <i class="fa fa-facebook-official fa-fw"></i><span>Share</span>
         </a>
         <a href="#" class="sb--button sb--twitter sb--native-fallback" data-url="http://www.gameswelt.de" data-via="@gameswelt" data-text="TEILEN!!!">
             <i class="fa fa-twitter fa-fw"></i>
             <span>Tweet</span>
         </a>
-        <a href="#" class="sb--button sb--mail sb--native-fallback" data-subject="TITEL" data-url="http://www.gameswelt.de">
-            <i class="fa fa-envelope fa-fw"></i>
-            <span>Mail</span>
+        <a href="#" class="sb--button sb--native hidden" data-url="http://www.gameswelt.de" data-text="TITEL!!">
+            <i class="fa fa-share-alt fa-fw"></i>
+            <span>Share</span>
         </a>
-        <a href="#" class="sb--button sb--whatsapp sb--native-fallback" data-url="http://www.gameswelt.de" data-text="TITEL!">
-            <i class="fa fa-whatsapp fa-fw"></i>
-            <span>Teilen</span>
+    </div>
+
+    <h2>Native first</h2>
+
+    <div class="sb--container">
+        <a href="#" class="sb--button sb--facebook sb--native-fallback hidden" data-url="http://www.gameswelt.de/">
+            <i class="fa fa-facebook-official fa-fw"></i><span>Share</span>
         </a>
-        <a href="#" class="sb--button sb--pinterest sb--native-fallback" data-url="http://www.gameswelt.de" data-media="http://mediang.gameswelt.net/public/images/201704/24e235e883ea093708f77b9c679002d2.jpg">
-            <i class="fa fa-pinterest fa-fw"></i>
-            <span>Teilen</span>
+        <a href="#" class="sb--button sb--twitter sb--native-fallback hidden" data-url="http://www.gameswelt.de" data-via="@gameswelt" data-text="TEILEN!!!">
+            <i class="fa fa-twitter fa-fw"></i>
+            <span>Tweet</span>
         </a>
         <a href="#" class="sb--button sb--native" data-url="http://www.gameswelt.de" data-text="TITEL!!">
             <i class="fa fa-share-alt fa-fw"></i>
-            <span>Teilen</span>
+            <span>Share</span>
         </a>
     </div>
-    <br>
-    <br>
-    <br>
+
+    <h2>Vertical</h2>
+
     <div style="width: 150px">
         <div class="sb--container">
             <a href="#" class="sb--button sb--facebook"
                data-url="http://www.gameswelt.de/top-10/special/messeschmankerl-fuer-spiele-gourmets,259514">
-                <i class="fa fa-facebook-official fa-fw"></i><span>Teilen</span>
+                <i class="fa fa-facebook-official fa-fw"></i><span>Share</span>
             </a>
         </div>
         <div class="sb--container">
@@ -64,7 +102,7 @@
         <div class="sb--container">
             <a href="#" class="sb--button sb--whatsapp" data-url="http://www.gameswelt.de" data-text="TITEL!">
                 <i class="fa fa-whatsapp fa-fw"></i>
-                <span>Teilen</span>
+                <span>Share</span>
             </a>
         </div>
     </div>
